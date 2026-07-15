@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <span><h1>Event Ticket Booking System</h1></span>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section id="home">
+        <h2>Welcome!</h2>
+        <p>
+            Book tickets for movies, concerts and sports events easily.
+        </p>
+    </section>
+
+
+<section id="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="event-container">
+
+        <div class="card">
+            <img src="images/movie.png" alt="Movie">
+            <h3>Movie Night</h3>
+            <p>Time: 10:15 PM</p>
+            <p>Price: ₹250</p>
+            <p>Date: 19 July 2026</p>
+            <p>Location: Chennai</p>
+            <button onclick="selectEvent('Movie Night')">
+    Book Ticket
+</button>
+        </div>
+
+        <div class="card">
+            <img src="images/music.png.png" alt="Music">
+            <h3>Music Concert</h3>
+            <p>Time: 6:30 PM</p>
+            <p>Price: ₹1500</p>
+            <p>Date: 26 July 2026</p>
+            <p>Location: Bangalore</p>
+            <button onclick="selectEvent('Music Concert')">
+    Book Ticket
+</button>
+        </div>
+
+        <div class="card">
+            <img src="images/cricket.png.png" alt="Cricket">
+            <h3>Cricket Match</h3>
+            <p>Time: 7:45 PM</p>
+            <p>Price: ₹2500</p>
+            <p>Date: 30 July 2026</p>
+            <p>Location: Mumbai</p>
+            <button onclick="selectEvent('Cricket Match')">
+    Book Ticket
+</button>
+        </div>
+    </div>
+</section>
+
+<section id="booking">
+    <h2>Book Your Ticket</h2>
+
+    <form id="bookingForm">
+
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <br><br>
+
+        <input type="email" id="email" placeholder="Enter Your Email">
+        <br><br>
+
+        <select id="event">
+            <option value="">Select Event</option>
+            <option>Movie Night</option>
+            <option>Music Concert</option>
+            <option>Cricket Match</option>
+        </select>
+        <br><br>
+
+        <input type="number" id="tickets" placeholder="Number of Tickets" min="1">
+        <br><br>
+
+        <button type="submit">Submit Booking</button>
+       
+    </form>
+
+    <p id="message"></p>
+
+</section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@eventbooking.com</p>
+        <p>Phone: +91 98357 29450</p>
+        <p>© 2026 Event Ticket Booking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
